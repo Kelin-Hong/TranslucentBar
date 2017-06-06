@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:popupTheme="@style/AppTheme.PopupOverlay"/>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:showDividers="middle|end"
+            android:divider="?android:listDivider"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/common_status_bar"
+                android:layout_width="match_parent"
+                android:layout_margin="10dp"
+                android:text="Activity Common Status Bar"
+                android:gravity="center"
+                android:layout_height="50dp"/>
+
+            <TextView
+                android:id="@+id/image_over_status_bar"
+                android:layout_width="match_parent"
+                android:layout_margin="10dp"
+                android:gravity="center"
+                android:text="Activity Image Over Status Bar"
+                android:layout_height="50dp"/>
+
+            <TextView
+                android:id="@+id/fragment_status_bar"
+                android:layout_width="match_parent"
+                android:layout_margin="10dp"
+                android:text="Fragment Status Bar"
+                android:gravity="center"
+                android:layout_height="50dp"/>
+
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</LinearLayout>
