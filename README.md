@@ -1,5 +1,4 @@
 # Background
----
 Android 4.4 (KitKat) introduced translucent system UI styling for status bar, then Android 5.0+ offers simple ways to enable translucency in Activity（ ``` android:windowTranslucentStatus```） and tint color for status bar,But how to perfectly achieve translucent system UI styling for status bar is troublesome as before，particularly  compatible with KitKat. Here are some trouble you must care about:
 - FitsSystemWindows is puzzling，how to accurately use fitsSystemWindows is full of challenges（hint: it would get different effects between KitKat and Lollipop. CoordinatorLayout、AppBarLayout、CollapsingToolbarLayout has reimplemented FitsSystemWindows）
 - How to make view(ImageView) over status bar easily When use CollapsingToolbarLayout 
@@ -25,9 +24,11 @@ Apk Download:[TranslucentBar.apk](art/TranslucentBar.apk)
 ## Usage
 
 #### 1、Values-Styles
+
 You must first enable translucency and remove ActionBar and WindowTitle in your Activity. Just  add following styles，then set it for your Activity in AndroidManifest.xml.
 
-**values **
+**values**
+
 ```xml
 <style name="AppTheme.TranslucentStatusBar">
     <item name="windowActionBar">false</item>
@@ -35,7 +36,8 @@ You must first enable translucency and remove ActionBar and WindowTitle in your 
 </style>
 ```
 
-**values-v19 **
+**values-v19**
+
 ```xml
 <style name="AppTheme.TranslucentStatusBar">
     <item name="windowActionBar">false</item>
@@ -44,7 +46,7 @@ You must first enable translucency and remove ActionBar and WindowTitle in your 
 </style>
 ```
 
-####2、Activity
+#### 2、Activity
 
 **translucent**
 
@@ -95,6 +97,7 @@ translucent(activity,color) | transparent(activity,color)
   
 
 #### 3、Fragment
+
  Nothing less than Activity ,but  translucent(transparent) method must call in onCreateView  to take effect.
 ```java
 @Override
