@@ -9,7 +9,7 @@ Android 4.4 (KitKat) introduced translucent system UI styling for status bar, th
 
 
 ## TranslucentBar ##
-TranslucentBar is come to resolve all problem we mention above. This library offers a simple way to translucent system UI styling and tint color for status bar.It can work above API 19(KitKat 4.4).
+TranslucentBar is come to resolve all problem we mention above. This library offers a simple way to translucent system UI styling and tint color for status bar,you don't need to care for any about "FitsSystemWindows" and status bar colors. it can work above API 19(KitKat 4.4).
 ![](art/9.gif) 
 ## Demo ##
 
@@ -25,7 +25,7 @@ Apk Download:[TranslucentBar.apk](art/TranslucentBar.apk)
 
 #### 1、Values-Styles
 
-You must first enable translucency and remove ActionBar and WindowTitle in your Activity. Just  add following styles，then set it for your Activity in AndroidManifest.xml.
+You must first enable translucency and remove ActionBar and WindowTitle in your Activity. Just  add following styles，then set it for your Activity in AndroidManifest.xml.After that,you must make sure add toolbar in your layout to obtain action bar in your view.
 
 **values**
 
