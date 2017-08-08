@@ -20,7 +20,7 @@ Apk Download:[TranslucentBar.apk](art/TranslucentBar.apk)
 ## Download ##
 
 ```groovy
-  compile 'com.kelin.translucentbar:library:0.7.0' 
+  compile 'com.kelin.translucentbar:library:0.8.0' 
 ```
 
 ## Usage

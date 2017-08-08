@@ -159,7 +159,7 @@ public class TranslucentBarManager {
         }
         if (color <= 0) {
             TypedValue tv = new TypedValue();
-            activity.getTheme().resolveAttribute(android.R.attr.colorPrimary, tv, true);
+            activity.getTheme().resolveAttribute(R.attr.colorPrimary, tv, true);
             tintColor(activity, tv.resourceId);
         } else {
             tintColor(activity, color);
